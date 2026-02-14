@@ -19,7 +19,7 @@
     <link rel="icon" type="image/png" href="imagens/favicon.png" />
   </head>
   <body>
-    <header>
+    <header class="site-header">
       <div class="container nav">
         <div style="display: flex; align-items: center; gap: 14px">
           <a href="#"
@@ -74,6 +74,8 @@
             <img
               src="imagens/fabrica-queijos.jpg"
               alt="Imagem de indústria"
+              loading="lazy"
+              decoding="async"
               style="
                 width: 100%;
                 height: 320px;
@@ -109,6 +111,8 @@
             <img
               src="imagens/equipamento1.jpg"
               alt="equipamentos"
+              loading="lazy"
+              decoding="async"
               style="
                 width: 100%;
                 border-radius: 12px;
@@ -127,7 +131,12 @@
           <div class="grid">
             <a href="food-ind.html" class="service-link"
               ><article class="service">
-                <img src="imagens/alimentar.jpg" alt="Indústria Alimentar" />
+                <img
+                  src="imagens/alimentar.jpg"
+                  alt="Indústria Alimentar"
+                  loading="lazy"
+                  decoding="async"
+                />
                 <h3>Indústria Alimentar</h3>
                 <p>
                   Produtos certificados para higiene em instalações de produção
@@ -136,9 +145,14 @@
               </article></a
             >
 
-            <a href="food-ind.html" class="service-link"
+            <a href="car-clean.html" class="service-link"
               ><article class="service">
-                <img src="imagens/carwash.jpg" alt="Limpeza Automóvel" />
+                <img
+                  src="imagens/carwash.jpg"
+                  alt="Limpeza Automóvel"
+                  loading="lazy"
+                  decoding="async"
+                />
                 <h3>Limpeza Automóvel</h3>
                 <p>
                   Químicos e equipamentos profissionais para lavagem e
@@ -147,9 +161,14 @@
               </article></a
             >
 
-            <a href="food-ind.html" class="service-link"
+            <a href="water-treatment.html" class="service-link"
               ><article class="service">
-                <img src="imagens/agua.jpg" alt="Tratamento de Águas" />
+                <img
+                  src="imagens/agua.jpg"
+                  alt="Tratamento de Águas"
+                  loading="lazy"
+                  decoding="async"
+                />
                 <h3>Tratamento de Águas</h3>
                 <p>
                   Soluções para potabilização, manutenção de sistemas e controlo
@@ -158,13 +177,34 @@
               </article></a
             >
 
-            <a href="food-ind.html" class="service-link"
+            <a href="accessories.html" class="service-link"
               ><article class="service">
-                <img src="imagens/soap.jpg" alt="Acessórios" />
-                <h3>Acessórios & Equipamentos</h3>
+                <img
+                  src="imagens/equipamento1.jpg"
+                  alt="Equipamentos"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h3>Equipamentos & Doseamento</h3>
                 <p>
-                  Fornecimento de acessórios, dispensadores e outros
-                  equipamentos para higiene profissional e proteção individual.
+                  Equipamentos de aplicação, doseamento e apoio técnico para
+                  operações de limpeza profissional.
+                </p>
+              </article></a
+            >
+
+            <a href="higiene-pessoal.html" class="service-link"
+              ><article class="service">
+                <img
+                  src="imagens/soap.jpg"
+                  alt="Higiene Pessoal"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h3>Higiene Pessoal</h3>
+                <p>
+                  Soluções para higiene de mãos e cuidado da pele em ambientes
+                  profissionais.
                 </p>
               </article></a
             >
@@ -183,33 +223,36 @@
                 action="https://formspree.io/f/xvgvweoz"
               >
                 <!-- Replace the action URL with your Formspree endpoint or server endpoint -->
-                <label class="small">Nome</label>
+                <label class="small" for="name">Nome</label>
                 <input
                   type="text"
                   name="name"
                   id="name"
+                  autocomplete="name"
                   placeholder="O seu nome"
                   required
                 />
 
-                <label class="small">Email</label>
+                <label class="small" for="email">Email</label>
                 <input
                   type="email"
                   name="email"
                   id="email"
+                  autocomplete="email"
                   placeholder="o.seu@email.com"
                   required
                 />
 
-                <label class="small">Telefone</label>
+                <label class="small" for="phone">Telefone</label>
                 <input
                   type="text"
                   name="phone"
                   id="phone"
+                  autocomplete="tel"
                   placeholder="91X XXX XXX"
                 />
 
-                <label class="small">Mensagem</label>
+                <label class="small" for="message">Mensagem</label>
                 <textarea
                   name="message"
                   id="message"
@@ -222,6 +265,7 @@
                 <p
                   id="form-status"
                   class="small"
+                  aria-live="polite"
                   style="margin-top: 8px; color: var(--muted)"
                 ></p>
               </form>
@@ -291,7 +335,7 @@
 
     <footer>
       <div class="container">
-        <p>© 2025 Noberis. Todos os direitos reservados.</p>
+        <p>© 2026 Noberis. Todos os direitos reservados.</p>
       </div>
     </footer>
 

@@ -32,7 +32,7 @@ body {
 }
 
 /* NAVBAR */
-header {
+.site-header {
   position: sticky;
   top: 0;
   z-index: 60;
@@ -69,6 +69,7 @@ nav a:hover {
 .nav-right {
   display: flex;
   align-items: center;
+  gap: 12px;
 }
 
 .cta {
@@ -278,20 +279,41 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  nav a {
-    display: none;
-  }
-
-  .cta {
-    display: none;
-  }
-
-  .logo {
-    height: 40px;
+  .nav {
+    flex-wrap: wrap;
+    gap: 12px;
   }
 
   .nav-right {
-    gap: 10px;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin-left: 0;
+    font-size: 14px;
+    padding: 6px 8px;
+    border-radius: 6px;
+  }
+
+  .cta {
+    display: inline-block;
+    margin-left: 0;
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .logo {
+    height: 52px;
   }
 }
 
@@ -332,6 +354,10 @@ a {
 
 .product-card p.text-muted {
   flex-grow: 1; /* Empurra o conteúdo para ocupar espaço */
+}
+
+.product-card .btn {
+  margin-top: auto;
 }
 
 .product-img {
